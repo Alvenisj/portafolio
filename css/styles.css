@@ -86,7 +86,7 @@ body.dark {
     width: 75px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 }
 
 .flags__item {
@@ -127,8 +127,8 @@ body.dark {
     --primary-color: hsl(150, 84%, 56%);
 
 }
-.colors__item--purple {
-    --primary-color: hsl(276, 84%, 56%);
+.colors__item--red {
+    --primary-color: hsl(355, 92%, 50%);
 
 }
 .colors__item--orange {
@@ -184,8 +184,11 @@ body.dark {
 }
 
 .card__text {
+
     font-size: 0.9rem;
     line-height: 1.6;
+    text-align: justify;
+    padding: 2px;
 
 }
 
@@ -446,7 +449,13 @@ body.dark {
       
     }  
 
+    .project__tags {
+       
+        width: 325px;
+        font-size: 0.8em;
+        
 
+    }
 
     .buttons {
     
