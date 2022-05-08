@@ -22,21 +22,13 @@
              </div>
            </div>
 
-           <div id="flags" class="flags">
-             <div class="flags__item" data-language="es">
-               <img class="flas__img" src="/assets/icons/es.svg" alt="Español">
-              </div>
-           </div>
-           <div id="flags" class="flags">
-            <div class="flags__item" data-language="en">
-              <img class="flas__img" src="/assets/icons/en.svg" alt="English">
-             </div>
-          </div>
+          
+
         <!--Contenedor de los colores-->
         <div id="toggle-colors" class="colors">
           <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
           <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
-          <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+          <div data-color="hsl(0, 100%, 51%)" class="colors__item colors__item--red"></div>
           <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
         </div>
 
@@ -68,8 +60,9 @@
               <a href="tel:3232914082">+57 323-2914082</a>
           </div>
 
-            <p class="card__text">
+            <p class="card__text" data-section="profile" data-value="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aliquam. Fugit illo repellat modi, rem et deserunt dolorum fuga incidunt laudantium fugiat ad, saepe excepturi culpa error odit facilis ipsa perferendis beatae sed doloribus. Laborum a iste quisquam quae molestiae nisi quas quibusdam! Accusantium molestias, debitis ratione ipsum commodi tempore!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aliquam. Fugit illo repellat modi, rem et deserunt dolorum fuga incidunt laudantium fugiat ad, saepe excepturi culpa error odit facilis ipsa perferendis beatae sed doloribus. Laborum a iste quisquam quae molestiae nisi quas quibusdam! Accusantium molestias, debitis ratione ipsum commodi tempore
             </p>
     
     </article>
@@ -81,21 +74,21 @@
              <div class="experience">
                 <img src="/assets/images/profile-f.jpeg" alt="logo" class="experience__image">
                   <div class="experience__info">
-                          <p class="experience__time">
+                          <p class="experience__time" data-section="experience" data-value="firs-job-dates">
                               Feb 2016 - Current
                          </p>
-                         <h3 class="experience__job">FullStack Developer</h3>
-                         <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quos, maiores, molestias aperiam reprehenderit voluptates suscipit quaerat nam fugit, vitae consectetur accusantium ad? Sit, similique laboriosam possimus porro officiis error.</p>
+                         <h3 class="experience__job" data-section="experience" data-value= "firs-job-title">FullStack Developer</h3>
+                         <p class="experience__description" data-section="experience" data-value= "firs-job-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quos, maiores, molestias aperiam reprehenderit voluptates suscipit quaerat nam fugit, vitae consectetur accusantium ad? Sit, similique laboriosam possimus porro officiis error.</p>
                   </div>
               </div>
 
               <div class="experience">
                 <img src="/assets/images/profile-f.jpeg" alt="logo" class="experience__image">
                   <div class="experience__info">
-                          <p class="experience__time">
+                          <p class="experience__time" data-section="experience" data-value="second-job-dates">
                               Feb 2016 - Current
                          </p>
-                         <h3 class="experience__job">FullStack Developer</h3>
+                         <h3 class="experience__job" data-section="experience" data-value="second-job-title">FullStack Developer</h3>
                          <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quos, maiores, molestias aperiam reprehenderit voluptates suscipit quaerat nam fugit, vitae consectetur accusantium ad? Sit, similique laboriosam possimus porro officiis error.</p>
                   </div>
               </div>
@@ -103,11 +96,11 @@
            <div class="experience">
             <img src="/assets/images/profile-f.jpeg" alt="logo" class="experience__image">
                 <div class="experience__info">
-                       <p class="experience__time">
+                       <p class="experience__time" data-section="experience" data-value="last-job-dates">
                              Feb 2016 - Current
                       </p>
-                      <h3 class="experience__job">Programador</h3>
-                      <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quos, maiores, molestias aperiam reprehenderit voluptates suscipit quaerat nam fugit, vitae consectetur accusantium ad? Sit, similique laboriosam possimus porro officiis error.</p>
+                      <h3 class="experience__job" data-section="experience" data-value="last-job-title">Programador</h3>
+                      <p class="experience__description" data-section="experience" data-value="last-job-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quos, maiores, molestias aperiam reprehenderit voluptates suscipit quaerat nam fugit, vitae consectetur accusantium ad? Sit, similique laboriosam possimus porro officiis error.</p>
                </div>
           </div>
 
@@ -261,42 +254,14 @@
            <div class="card__image-container">
                <img class="card__image" src="/assets/images/projjj.jpg" alt="Landing Page">
            </div>
+       <div class="project">
 
-           <div class="project">
-
-                  <div class="project__tags">
-                      <span class="project__tag">#HTML</span>
-                      <span class="project__tag">#CSS</span>
-                      <span class="project__tag">#Javascript</span>
-                      <span class="project__tag">#Responsive</span>
-                  </div>
-
-                 <h2 class="card__title">Landing Page</h2>
-                 <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
-                 <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
-      
-                 <div class="buttons">
-                     <a href="#" class="button button--primary">Demo</a>
-                     <a href="#" class="button button--ghost">Code</a>
-                </div>
-          </div>
-
-    </article>
-
-    <article class="card card--project">
-      
-      <div class="card__image-container">
-          <img class="card__image" src="/assets/images/projjj.jpg" alt="Landing Page">
-      </div>
-
-      <div class="project">
-
-             <div class="project__tags">
-                 <span class="project__tag">#HTML</span>
-                 <span class="project__tag">#CSS</span>
-                 <span class="project__tag">#Javascript</span>
-                 <span class="project__tag">#Responsive</span>
-             </div>
+            <div class="project__tags">
+                <span class="project__tag">#HTML</span>
+                <span class="project__tag">#CSS</span>
+                <span class="project__tag">#Javascript</span>
+                <span class="project__tag">#Responsive</span>
+            </div>
 
             <h2 class="card__title">Landing Page</h2>
             <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
@@ -306,7 +271,37 @@
                 <a href="#" class="button button--primary">Demo</a>
                 <a href="#" class="button button--ghost">Code</a>
            </div>
-     </div>
+
+       </div>
+
+   
+</article>
+
+<article class="card card--project">
+      
+  <div class="card__image-container">
+      <img class="card__image" src="/assets/images/projjj.jpg" alt="Landing Page">
+  </div>
+<div class="project">
+
+   <div class="project__tags">
+       <span class="project__tag">#HTML</span>
+       <span class="project__tag">#CSS</span>
+       <span class="project__tag">#Javascript</span>
+       <span class="project__tag">#Responsive</span>
+   </div>
+
+   <h2 class="card__title">Landing Page</h2>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+
+   <div class="buttons">
+       <a href="#" class="button button--primary">Demo</a>
+       <a href="#" class="button button--ghost">Code</a>
+  </div>
+
+</div>
+
 
 </article>
 
@@ -315,25 +310,26 @@
   <div class="card__image-container">
       <img class="card__image" src="/assets/images/projjj.jpg" alt="Landing Page">
   </div>
+<div class="project">
 
-  <div class="project">
+   <div class="project__tags">
+       <span class="project__tag">#HTML</span>
+       <span class="project__tag">#CSS</span>
+       <span class="project__tag">#Javascript</span>
+       <span class="project__tag">#Responsive</span>
+   </div>
 
-         <div class="project__tags">
-             <span class="project__tag">#HTML</span>
-             <span class="project__tag">#CSS</span>
-             <span class="project__tag">#Javascript</span>
-             <span class="project__tag">#Responsive</span>
-         </div>
+   <h2 class="card__title">Landing Page</h2>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
 
-        <h2 class="card__title">Landing Page</h2>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+   <div class="buttons">
+       <a href="#" class="button button--primary">Demo</a>
+       <a href="#" class="button button--ghost">Code</a>
+  </div>
 
-        <div class="buttons">
-            <a href="#" class="button button--primary">Demo</a>
-            <a href="#" class="button button--ghost">Code</a>
-       </div>
- </div>
+</div>
+
 
 </article>
 
@@ -342,25 +338,26 @@
   <div class="card__image-container">
       <img class="card__image" src="/assets/images/projjj.jpg" alt="Landing Page">
   </div>
+<div class="project">
 
-  <div class="project">
+   <div class="project__tags">
+       <span class="project__tag">#HTML</span>
+       <span class="project__tag">#CSS</span>
+       <span class="project__tag">#Javascript</span>
+       <span class="project__tag">#Responsive</span>
+   </div>
 
-         <div class="project__tags">
-             <span class="project__tag">#HTML</span>
-             <span class="project__tag">#CSS</span>
-             <span class="project__tag">#Javascript</span>
-             <span class="project__tag">#Responsive</span>
-         </div>
+   <h2 class="card__title">Landing Page</h2>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
 
-        <h2 class="card__title">Landing Page</h2>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+   <div class="buttons">
+       <a href="#" class="button button--primary">Demo</a>
+       <a href="#" class="button button--ghost">Code</a>
+  </div>
 
-        <div class="buttons">
-            <a href="#" class="button button--primary">Demo</a>
-            <a href="#" class="button button--ghost">Code</a>
-       </div>
- </div>
+</div>
+
 
 </article>
 
@@ -369,25 +366,54 @@
   <div class="card__image-container">
       <img class="card__image" src="/assets/images/projjj.jpg" alt="Landing Page">
   </div>
+<div class="project">
 
-  <div class="project">
+   <div class="project__tags">
+       <span class="project__tag">#HTML</span>
+       <span class="project__tag">#CSS</span>
+       <span class="project__tag">#Javascript</span>
+       <span class="project__tag">#Responsive</span>
+   </div>
 
-         <div class="project__tags">
-             <span class="project__tag">#HTML</span>
-             <span class="project__tag">#CSS</span>
-             <span class="project__tag">#Javascript</span>
-             <span class="project__tag">#Responsive</span>
-         </div>
+   <h2 class="card__title">Landing Page</h2>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
 
-        <h2 class="card__title">Landing Page</h2>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+   <div class="buttons">
+       <a href="#" class="button button--primary">Demo</a>
+       <a href="#" class="button button--ghost">Code</a>
+  </div>
 
-        <div class="buttons">
-            <a href="#" class="button button--primary">Demo</a>
-            <a href="#" class="button button--ghost">Code</a>
-       </div>
- </div>
+</div>
+
+
+</article>
+
+<article class="card card--project">
+      
+  <div class="card__image-container">
+      <img class="card__image" src="/assets/images/projjj.jpg" alt="Landing Page">
+  </div>
+<div class="project">
+
+   <div class="project__tags">
+       <span class="project__tag">#HTML</span>
+       <span class="project__tag">#CSS</span>
+       <span class="project__tag">#Javascript</span>
+       <span class="project__tag">#Responsive</span>
+   </div>
+
+   <h2 class="card__title">Landing Page</h2>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+   <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque voluptatem libero sunt quia, perferendis aperiam autem repellendus quasi veniam!</p>
+
+   <div class="buttons">
+       <a href="#" class="button button--primary">Demo</a>
+       <a href="#" class="button button--ghost">Code</a>
+  </div>
+
+</div>
+
 
 </article>
 
@@ -395,8 +421,31 @@
 
 </main>
 
+<footer class="footer">
+  <div class="social">
+      <a href="#" class="icon-facebook">
+          <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="#" class="icon-twitter">
+          <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" class="icon-instagram">
+          <i class="fa-brands fa-instagram-square"></i>
+      </a>
+      <a href="#" class="icon-googleplus">
+          <i class="fa-brands fa-google-plus-g"></i>
+      </a>
+      <a href="#" class="icon-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+     
+  </div>
+  <p class="copy">Genericos Genalca - 2022 - <a class="footer-copy" href="#">Copyright &copy; Todos los derechos reservados</a></p>
+</footer>
 
 
+<script src="https://kit.fontawesome.com/62e24d8987.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

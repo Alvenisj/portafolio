@@ -68,36 +68,27 @@ body.dark {
     justify-content: center;
     cursor: pointer;
     
+    
 
 }
 
 .toggle-theme__icon {
     margin-right: 0.5em;
     width: 20px;
+    background: var(--primary-color);
+    padding: 2px;
+    
 
 }
+
+
 
 .toggle-theme__text {
     font-size: 0.8rem;
 
 }
 
-.flags {
-    width: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.flags__item {
-    width: 30px;
-}
-
-.flas__img {
-
-    display: block;
-    cursor: pointer;
-}
 /* ------------------------------------------------------------------------*/
 
 /*MÓDULO QUE LE DA EL COLOR A LAS ETIQUETAS Y A LOS CONTENEDORES*/
@@ -127,8 +118,8 @@ body.dark {
     --primary-color: hsl(150, 84%, 56%);
 
 }
-.colors__item--purple {
-    --primary-color: hsl(276, 84%, 56%);
+.colors__item--red {
+    --primary-color: hsl(0, 100%, 51%);
 
 }
 .colors__item--orange {
@@ -140,6 +131,19 @@ body.dark {
 
 /*ESTILO DE MOVIL*/
 
+
+.card--profile {
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transitionColor);
+}
+
+.card--hobbies {
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transitionColor);
+
+}
 .main {
     display: grid;
     padding: 2em;
@@ -343,30 +347,30 @@ body.dark {
 
 /*Módulo de estilo del área de los proyectos*/
 
-.project {
-    margin-left: .7em;
-    position: relative;
-}
+/*contendor de los estilos de las etiquetas de los proyectos*/
+
+
 
 .project__tags {
     display: flex;
     justify-content: space-between;
-    margin: 1em 0;
+    margin: 0.5em 0;
     font-size: 0.6rem;
     width: 275px;
 
 }
 
+/*ESTILOS DE LAS ETIQUETAS*/
 .project__tag {
 
     padding: 0.4em 0.8em;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     background-color: var(--primary-color);
     color: var(--bg-color);
-    transition: var(--transitionColor);
-
+    
 }
 
+/*CONTENDOR DE LOS ESTILOS DE LOS BOTONES DEMO Y CODE*/
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -374,17 +378,18 @@ body.dark {
 }
 
 .button {
-    width: 80px;
-    line-height: 2.3;
+    width: 100px;
+    line-height: 2.5;
     text-align: center;
     border-radius: var(--border-radius);
     transition: var(--transitionColor);
+    color: var(--bg-color);
     
 }
 
+/*ESTILOS DEL BOTON DEMO*/
 .button--primary {
     border-radius: 8px;
-    color: var(--bg-color);
     background-color: var(--primary-color);
 
 }
@@ -397,6 +402,25 @@ body.dark {
     color: var(--primary-color);
 
 }
+.button--primary:hover {
+
+    background:rgba(60, 179, 247, 0.589);
+    color: black;   
+    border-radius: var(--border-radius); 
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    
+
+}
+
+.button--ghost:hover {
+
+    background:rgba(60, 179, 247, 0.589);
+    color: black;
+    border-radius: var(--border-radius);
+    border-radius: 8px;
+}
+
 
 /*------------------------------------------------------------------------------*/
 
@@ -408,10 +432,64 @@ body.dark {
     }
 
 }
+/*------------FOOTER DE LA PÁGINA----------------------*/
+
+.footer {
+
+    background: rgba(51, 51, 51, 0.747);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: var(--transitionColor);  
+}
+
+
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background: rgba(241, 212, 212, 0.281);
+    margin: 0 5px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    line-height: 22px;
+    background-color: var(--primary-color);
+    
+}
+
+.footer .social [class^="icon-"]:hover {
+
+    background:rgba(60, 179, 247, 0.589);
+
+}
+
+.footer-copy  {
+
+    text-decoration: none;
+    color: #fff;
+    background: rgba(241, 212, 212, 0.281);
+   
+    
+}
+
+.footer-copy:hover  {
+
+    background: rgba(60, 179, 247, 0.589);
+}
+ 
+.copy {
+
+    font-size: 12px;
+}
 
 
 /*ESTILOS DE ESCRITORIO*/
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 760px) {
 
     .main {
     grid-template-columns: min-content 1fr;
@@ -425,52 +503,40 @@ body.dark {
     align-items: start;
    }
 
+/*CONTENDEDOR DEL PROYECTO CON TODO*/
+   .project {
 
-}
-
-
-/*-----CONTAINER DE LOS PROYECTOS*/
-@media screen and (min-width: 760px) {
-
-    .project {
-        margin-left: 3em;
-        padding: 4rem 0;
-        
-    }
-
-    .card--project {
-
-        display: grid;
-        grid-template-columns: min-content 1fr;
-        grid-column: 1 / -1;     
-      
-    }  
-
-
-
-    .buttons {
+    margin-left: 2em;
     
-     position: absolute;
-     bottom: 1em;
+ 
+}
 
-    }
+/*Contenedor con los estilos de las etiquetas*/
+.project__tags {
 
-    .card__image-container {
+    width: 325px;
+    font-size: 0.8rem;
+}
 
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
 
-    } 
+/*CONTENEOR ARTICLE DE TODO LA SECCIÓN DE PROYECTO*/
+.card--project {
 
-    .card__image {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column: 1 / -1;     
+  
+}  
 
-        width: 100%;
-        height: 90% ;
 
-    }
 
 }
+
+
+
+
+
+
 
 
 
